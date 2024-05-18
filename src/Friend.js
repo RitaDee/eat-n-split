@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export const Friend = ({friend}) => {
     return (
         <li key={friend.id}>
@@ -5,9 +7,9 @@ export const Friend = ({friend}) => {
            
                 <h4>{friend.name}</h4>
                 
-                {/* {friend.balance < 0 && (
+                {friend.balance < 0 && (
                     <p className="red">You owe {friend.name} {Math.abs(friend.balance)}€</p>
-                )}  */}
+                )} 
 
                 {friend.balance > 0 && (
                     <p className="green">{friend.name} owes you {Math.abs(friend.balance)}€</p>
@@ -17,7 +19,7 @@ export const Friend = ({friend}) => {
                     <p>You and {friend.name} are even</p>
                 )} 
            
-           <button className="button">Select</button>
+           <Button>Select</Button>
         </li>
     )
 };

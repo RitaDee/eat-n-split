@@ -1,3 +1,4 @@
+import FormAddFriend from "./FormAdd";
 import { FriendsList } from "./FriendsList";
 
 const App = () => {
@@ -5,6 +6,7 @@ const App = () => {
     <div className="app">
       <div className="sidebar">
         <FriendsList />
+        <FormAddFriend />
       </div>
     </div>
   );
