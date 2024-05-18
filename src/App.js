@@ -1,6 +1,7 @@
 import FormAddFriend from "./FormAdd";
 import { FriendsList } from "./FriendsList";
 import Button from "./Button";
+import { FormSplitBill } from "./FormSplitBill";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <FormAddFriend />
         <Button>Add friend</Button>
       </div>
+      <FormSplitBill />
     </div>
   );
 };
