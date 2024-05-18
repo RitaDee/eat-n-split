@@ -1,5 +1,6 @@
 import FormAddFriend from "./FormAdd";
 import { FriendsList } from "./FriendsList";
+import Button from "./Button";
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <div className="sidebar">
         <FriendsList />
         <FormAddFriend />
+        <Button>Add friend</Button>
       </div>
     </div>
   );
