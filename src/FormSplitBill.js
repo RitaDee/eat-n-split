@@ -15,7 +15,7 @@ export const FormSplitBill = () => {
         <input type="text" disabled />
 
         <label>🤑 Who is paying the bill</label>
-        <select name="" id="">
+        <select>
             <option value="user">You</option>
             <option value="friend">X</option>
         </select>
