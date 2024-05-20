@@ -32,11 +32,15 @@ const App = () => {
   const handleShowAddFriend = () => {
     setShowAddFriend ((showAddFriend) => !showAddFriend);
   }
+
+  const handleAddFriend = (friend) => {
+    setFriends((friends) => [ ...friends, friend ])
+  }
   return (
     <div className="app">
       <div className="sidebar">
         <FriendsList friends={friends} />
-       {showAddFriend && <FormAddFriend />}
+       {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
         <Button onClick={handleShowAddFriend}>{showAddFriend ? "Close" : "Add friend"}</Button>
       </div>
       <FormSplitBill />
