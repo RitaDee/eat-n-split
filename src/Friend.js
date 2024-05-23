@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-export const Friend = ({friend}) => {
+export const Friend = ({ friend, onSelection }) => {
     return (
         <li key={friend.id}>
             <img src={friend.image} alt={friend.name} />
@@ -19,7 +19,7 @@ export const Friend = ({friend}) => {
                     <p>You and {friend.name} are even</p>
                 )} 
            
-           <Button>Select</Button>
+           <Button onClick={() => onSelection(friend)}>Select</Button>
         </li>
     )
 };
