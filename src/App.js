@@ -46,7 +46,11 @@ const App = () => {
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendsList friends={friends} onSelection={handleSelection} />
+        <FriendsList 
+          friends={friends} 
+          onSelection={handleSelection}
+          selectedFriends={selectedFriends}
+         />
        {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
         <Button onClick={handleShowAddFriend}>{showAddFriend ? "Close" : "Add friend"}</Button>
       </div>
