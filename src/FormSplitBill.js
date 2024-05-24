@@ -1,9 +1,7 @@
-import React from 'react'
-
-export const FormSplitBill = () => {
+export const FormSplitBill = ({ selectedFriends }) => {
   return (
     <form className='form-split-bill'>
-        <h2>Split a bill with X</h2>
+        <h2>Split a bill with {selectedFriends.name} </h2>
 
         <label>💰 Bill value</label>
         <input type="text" />
@@ -11,13 +9,13 @@ export const FormSplitBill = () => {
         <label>🧍‍♀️Your expense</label>
         <input type="text" />
 
-        <label>👫 X's expense</label>
+        <label>👫 {selectedFriends.name}'s expense</label>
         <input type="text" disabled />
 
         <label>🤑 Who is paying the bill</label>
         <select>
             <option value="user">You</option>
-            <option value="friend">X</option>
+            <option value="friend">{selectedFriends.name}</option>
         </select>
     </form>
   )
