@@ -1,6 +1,6 @@
 import { Friend } from "./Friend";
 
-export const FriendsList = ({ friends, onSelection, selectedFriends }) => {
+export const FriendsList = ({ friends, onSelection, selectedFriend }) => {
 
     return (
         <ul>{friends.map((friend) => (
@@ -8,7 +8,7 @@ export const FriendsList = ({ friends, onSelection, selectedFriends }) => {
                 friend={friend} 
                 key={friend.id} 
                 onSelection={onSelection}
-                selectedFriends={selectedFriends}
+                selectedFriend={selectedFriend}
                 />
         ))}</ul>
     )
