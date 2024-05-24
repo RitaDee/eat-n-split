@@ -50,7 +50,7 @@ const App = () => {
        {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
         <Button onClick={handleShowAddFriend}>{showAddFriend ? "Close" : "Add friend"}</Button>
       </div>
-      {selectedFriends && <FormSplitBill />}
+      {selectedFriends && <FormSplitBill selectedFriends={selectedFriends} />}
     </div>
   );
 };
