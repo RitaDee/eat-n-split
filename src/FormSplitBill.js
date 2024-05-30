@@ -18,7 +18,7 @@ export const FormSplitBill = ({ selectedFriend }) => {
         <input 
           type="text"
           value={paidByUser}
-          onChange={(e) => setPaidByUser(e.target.value)} 
+          onChange={(e) => setPaidByUser(Number(e.target.value))} 
           />
 
         <label>👫 {selectedFriend.name}'s expense</label>
@@ -27,7 +27,7 @@ export const FormSplitBill = ({ selectedFriend }) => {
         <label>🤑 Who is paying the bill</label>
         <select
           value={whoIsPaying}
-          onChange={(e) => setWhoIsPaying(e.target.value)}
+          onChange={(e) => setWhoIsPaying(Number(e.target.value))}
         >
             <option value="user">You</option>
             <option value="friend">{selectedFriend.name}</option>
