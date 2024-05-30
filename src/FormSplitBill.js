@@ -15,7 +15,11 @@ export const FormSplitBill = ({ selectedFriend }) => {
          />
 
         <label>🧍‍♀️Your expense</label>
-        <input type="text" />
+        <input 
+          type="text"
+          value={paidByUser}
+          onChange={(e) => setPaidByUser(e.target.value)} 
+          />
 
         <label>👫 {selectedFriend.name}'s expense</label>
         <input type="text" disabled />
