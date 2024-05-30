@@ -1,4 +1,6 @@
+import { useState } from "react";
 export const FormSplitBill = ({ selectedFriend }) => {
+  const [bill, setBill] = useState("");
   return (
     <form className='form-split-bill'>
         <h2>Split a bill with {selectedFriend.name} </h2>
