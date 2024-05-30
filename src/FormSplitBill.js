@@ -8,7 +8,11 @@ export const FormSplitBill = ({ selectedFriend }) => {
         <h2>Split a bill with {selectedFriend.name} </h2>
 
         <label>💰 Bill value</label>
-        <input type="text" />
+        <input 
+        type="text" 
+        value={bill}
+        onChange={(e) => setBill(e.target.value)}
+         />
 
         <label>🧍‍♀️Your expense</label>
         <input type="text" />
